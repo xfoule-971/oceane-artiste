@@ -1,0 +1,201 @@
+/* Définir la font-face */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../assets/fonts/Cormorant-Bold.woff'),
+  url('../assets/fonts/Cormorant-Bold.ttf') format('truetype'),
+  url('../assets/fonts/Cormorant-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter_18pt-Regular.woff'),
+  url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype'),
+  url('../assets/fonts/Inter_18pt-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Mea Culpa";
+  src: url('../assets/fonts/MeaCulpa-Regular.woff'),
+  url('../assets/fonts/MeaCulpa-Regular.ttf') format('truetype'),
+  url('../assets/fonts/MeaCulpa-Regular.otf') format('opentype');
+}
+
+/* Appliquer globalement */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body{
+  background-image: url('../assets/images/cloud.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Scope uniquement la navbar */
+.nav-artiste {
+  font-family: 'Cormorant', sans-serif;
+  letter-spacing: 0.12em;
+}
+
+/* Logo */
+.logo-navbar {
+  height: 100px;
+  object-fit: contain;
+}
+
+/*page d'accueil*/
+.home,
+.prestations,
+.gallery,
+.artiste,
+.send-me,
+.wich{
+  margin-top: 12rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.home-title {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 800;
+}
+
+/*page contact*/
+.contact-me{
+  background-image: url("../assets/images/ciel.jpg");
+  background-size: "cover";
+  background-position: "center";
+}
+.title-plantes{
+  font-family: 'Cormorant', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  text-align: center;
+
+  background-image: url("../assets/images/plantes.png");
+  background-size: cover;
+  background-position: center;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Firefox */
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* Bloc image */
+.hero-image {
+  /* hauteur visuelle proche de ta capture */
+  background-image: url("../assets/images/peinture-home.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* Filtre sombre */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Titre au-dessus */
+.hero-title {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: 0.05em;
+  max-width: 700px;
+}
+
+/*footer*/
+.footer-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+.social-react {
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-react:hover {
+  transform: scale(1.15);
+  color: green;
+}
+
+
+
+/* Responsive mobile */
+@media (max-width: 991px) {
+
+  /* Container navbar */
+  .nav-artiste .container {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Logo centré horizontalement */
+  .navbar-brand {
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    margin: -15px;
+  }
+
+  .logo-navbar {
+    height: 60px;
+  }
+
+  /* Burger à droite */
+  .navbar-toggler {
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  /* Menu en dessous */
+  .navbar-collapse {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  } 
+  .home,
+  .prestations,
+  .gallery,
+  .artiste,
+  .send-me,
+  .wich{
+    margin-top: 4rem;
+  }
+  .prestations{
+    margin-top: 4rem;
+  }
+  footer{
+    padding: 0 2rem 0 2rem;
+  }
+}
