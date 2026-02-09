@@ -6,7 +6,7 @@ const options = {
         info: {
             title: 'API Océane artiste',
             version: '1.0.0',
-            description: 'Documentation de l’API des années'
+            description: 'Documentation de l’API des oeuvres par année (2023-2026)'
         },
         servers: [
             {

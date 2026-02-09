@@ -5,12 +5,18 @@ const path = require('path');
 
 const app = express();
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./docs/swagger');
+
 // middleware
 app.use(cors());
 app.use(express.json());
 
 // rendre le dossier uploads public
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // routes API
 app.use('/api', require('./routes'));
