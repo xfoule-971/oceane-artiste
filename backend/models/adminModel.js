@@ -16,7 +16,7 @@ const AdminModel = {
 
             const query = `
                 SELECT id, identifiant, mot_de_passe
-                FROM administrateurs
+                FROM admin
                 WHERE identifiant = ?
                 LIMIT 1
             `;
