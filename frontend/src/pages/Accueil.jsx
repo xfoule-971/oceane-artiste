@@ -40,12 +40,13 @@ const Accueil = () => {
 
             <Helmet>
 
-                <title>Ocefaitdestaches | Galerie d'Art Contemporain</title>
+                <title>Ocefaitdestaches || Galerie d'Art Contemporain</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" 
-                    content="Découvrez l'univers d'Océane Foule. Un voyage pictural à travers ses collections 2023-2026,
-                    de ses premières toiles à ses créations les plus récentes." 
+                    content="Découvrez l'univers d'Océane Foule. Un voyage pictural 
+                    à travers ses collections de 2023 à 2026, de ses premières toiles 
+                    à ses créations les plus récentes." 
                 />
                 
             </Helmet>

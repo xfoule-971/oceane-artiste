@@ -105,7 +105,15 @@ const AdminStatus = () => {
     return (
         <>
             <Helmet>
-                <title>Admin - Statuts</title>
+
+                <title>Admin - Statuts || ocefaitdestaches</title>
+
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" content="Gestion des status" />
+
+                {/*Empêcher l'indexation de la page*/}
+                <meta name="robots" content="noindex, nofollow" />
+
             </Helmet>
 
             <AdminHeroCard titre1="Gestion des statuts" />

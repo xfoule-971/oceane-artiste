@@ -14,12 +14,12 @@ const Contact = () => {
             
             <Helmet>
 
-                <title>Contactez-nous | Ocefaitdestaches</title>
+                <title>Contactez-nous || Ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" 
-                    content="Contactez Océane Foule pour un projet, une commande de tableau ou une inscription aux ateliers. 
-                    Echangez avec l'artiste et donnez vie à vos idées." 
+                    content="Contactez Océane Foule pour un projet artistique, une commande de tableau 
+                    ou une inscription  à ses ateliers. Echangez avec l'artiste et donnez vie à vos idées." 
                 />
                 
             </Helmet>

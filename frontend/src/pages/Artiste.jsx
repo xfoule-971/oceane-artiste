@@ -34,12 +34,12 @@ const Artiste = () => {
 
             <Helmet>
 
-                <title>Biographie | ocefaitdestaches</title>
+                <title>Biographie || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" 
-                    content="Portrait d'Océane Foule : découvrez le parcours et la démarche d'une jeune artiste peintre
-                    émergente. Son histoire, ses inspirations et sa vision de l'art." 
+                    content="Portrait d'Océane Foule : découvrez le parcours 
+                    et la démarche d'une jeune artiste peintre  émergente. Son histoire, ses inspirations et sa vision de l'art." 
                 />
                 
             </Helmet>

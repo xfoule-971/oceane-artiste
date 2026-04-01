@@ -46,11 +46,11 @@ const Prestations = () => {
 
             <Helmet>
 
-                <title>Services & Commandes | Ocefaitdestaches</title>
+                <title>Services & Commandes || Ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" 
-                    content="Océane Foule : commandez une œuvre personnalisée ou participez à ses ateliers de peinture. 
+                    content="Océane Foule : commandez une œuvre personnalisée, encore ou participez à ses ateliers de peinture. 
                     Cours d'art, projets sur mesure et collaborations artistiques." 
                 />
                 
