@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const auth = require("../middlewares/authMiddleware");
-const upload = require("../middlewares/upload");
+const upload = require("../middlewares/Upload");
 const handleValidation = require("../middlewares/handleValidation");
 
 const adminController = require("../controllers/adminController");
