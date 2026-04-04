@@ -44,17 +44,21 @@ const AdminOeuvres = () => {
         try {
 
             const [resO, resC, resT, resS] = await Promise.all([
+
                 fetch(`${API_URL}/api/oeuvres`),
                 fetch(`${API_URL}/api/collections`),
                 fetch(`${API_URL}/api/techniques`),
                 fetch(`${API_URL}/api/statuts`)
+
             ]);
 
             const [o, c, t, s] = await Promise.all([
+
                 resO.json(),
                 resC.json(),
                 resT.json(),
                 resS.json()
+
             ]);
 
             setData(o.data || o || []);
@@ -93,10 +97,14 @@ const AdminOeuvres = () => {
             const token = localStorage.getItem("token");
 
             const res = await fetch(`${API_URL}/api/admin/oeuvres/${id}`, {
+
                 method: "DELETE",
                 headers: {
+
                     Authorization: `Bearer ${token}`
+
                 }
+
             });
 
             const result = await res.json();
@@ -137,14 +145,17 @@ const AdminOeuvres = () => {
                 <title>Admin - Œuvres || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
-                <meta name="description" content="Gestion des collections" />
+                <meta name="description" content="Votre artiste-peintre 2.0." />
 
                 {/*Empêcher l'indexation de la page*/}
                 <meta name="robots" content="noindex, nofollow" />
-
+                
             </Helmet>
 
-            <AdminHeroCard titre1="Gestion des œuvres" />
+            <AdminHeroCard 
+                titre1="Gestion des œuvres" 
+                showDashboardLink={true}
+            />
 
             <section className="container my-5 p-3">
 
@@ -180,6 +191,7 @@ const AdminOeuvres = () => {
                             {
                                 name: "top3",
                                 type: "select",
+                                defaultValue: 0,
                                 options: [
                                     { value: 0, label: "Standard" },
                                     { value: 1, label: "Top 3" }
@@ -191,9 +203,13 @@ const AdminOeuvres = () => {
 
                     {/* TABLEAU */}
                     {loading ? (
+
                         <div className="text-center py-5">
+
                             <div className="spinner-border text-warning"></div>
+
                         </div>
+
                     ) : (
 
                         <TableUniv
@@ -247,7 +263,6 @@ const AdminOeuvres = () => {
 
                     )}
 
-
                 </div>
 
                 {/* MODAL */}
@@ -287,6 +302,7 @@ const AdminOeuvres = () => {
                             {
                                 name: "top3",
                                 type: "select",
+                                defaultValue: 0,
                                 options: [
                                     { value: 0, label: "Standard" },
                                     { value: 1, label: "Top 3" }
@@ -298,8 +314,11 @@ const AdminOeuvres = () => {
                 )}
 
             </section>
+
         </>
+
     );
+    
 };
 
 export default AdminOeuvres;

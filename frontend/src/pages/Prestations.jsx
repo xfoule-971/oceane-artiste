@@ -9,8 +9,6 @@ import Oeuvre from "../assets/images/oeuvre-originale.jpg";
 
 const Prestations = () => {
 
-    const herocard = [{title: "Donner vie à vos idées"}];
-
     const presta =[
 
                 {
@@ -46,31 +44,17 @@ const Prestations = () => {
 
             <Helmet>
 
-                <title>Services & Commandes || Ocefaitdestaches</title>
+                <title>Services & Commandes || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" 
-                    content="Océane Foule : commandez une œuvre personnalisée, encore ou participez à ses ateliers de peinture. 
+                    content="Océane Foule : commandez une œuvre personnalisée ou participez à ses ateliers de peinture. 
                     Cours d'art, projets sur mesure et collaborations artistiques." 
                 />
                 
             </Helmet>
             
-            <header>
-
-                {herocard.map((item, idx) => (
-
-                    <div key={idx}>
-
-                        <HeroCard
-                            title={item.title}
-                        />
-
-                    </div>
-
-                ))}
-
-            </header>
+            <HeroCard title="Donner vie à vos idées"/>
 
             <section className="container my-5">
             

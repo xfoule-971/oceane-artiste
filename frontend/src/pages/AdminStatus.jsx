@@ -109,14 +109,17 @@ const AdminStatus = () => {
                 <title>Admin - Status || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
-                <meta name="description" content="Gestion des status" />
+                <meta name="description" content="Votre artiste-peintre 2.0." />
 
                 {/*Empêcher l'indexation de la page*/}
                 <meta name="robots" content="noindex, nofollow" />
-
+                
             </Helmet>
 
-            <AdminHeroCard titre1="Gestion des statuts" />
+            <AdminHeroCard 
+                titre1="Gestion des statuts" 
+                showDashboardLink={true}
+            />
 
             <section className="container my-5 p-3">
 

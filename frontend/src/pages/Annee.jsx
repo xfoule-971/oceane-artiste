@@ -46,7 +46,7 @@ const Annee = () => {
 
         <>
             <Helmet>
-                
+
                 <title>Archives des œuvres par année || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
@@ -54,9 +54,9 @@ const Annee = () => {
                     content="Plongez dans l'univers de l'artiste peintre Océane Foule. 
                     Découvrez l'intégralité de ses œuvres classées par année pour témoigner d'une ascension singulière." 
                 />
-            
-            </Helmet>
 
+            </Helmet>
+            
             <HeroCard title="Chronologie" />
 
             <section className="d-flex flex-column align-items-center text-center gap-4 my-5">

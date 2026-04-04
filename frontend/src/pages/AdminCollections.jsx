@@ -108,14 +108,17 @@ const AdminCollections = () => {
                 <title>Admin - Collections || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
-                <meta name="description" content="Gestion des collections" />
+                <meta name="description" content="Votre artiste-peintre 2.0." />
 
                 {/*Empêcher l'indexation de la page*/}
                 <meta name="robots" content="noindex, nofollow" />
-
+                
             </Helmet>
 
-            <AdminHeroCard titre1="Gestion des collections" />
+            <AdminHeroCard 
+                titre1="Gestion des collections" 
+                showDashboardLink={true}
+            />
 
             <section className="container my-5 p-3">
 
