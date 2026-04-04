@@ -48,7 +48,7 @@ const Status = () => {
                 
             </Helmet>
             
-            <HeroCard title="Statuts" />
+            <HeroCard title="Inventaire & disponibilités" />
             
             <section className="d-flex flex-column align-items-center text-center gap-4 my-5">
 

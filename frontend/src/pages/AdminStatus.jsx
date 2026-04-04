@@ -106,7 +106,7 @@ const AdminStatus = () => {
         <>
             <Helmet>
 
-                <title>Admin - Statuts || ocefaitdestaches</title>
+                <title>Admin - Status || ocefaitdestaches</title>
 
                 {/*La description aux moteurs de recherche*/}
                 <meta name="description" content="Gestion des status" />
