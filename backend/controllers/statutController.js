@@ -23,7 +23,7 @@ const statutController = {
             res.status(500).json({
                 
                 success: false, 
-                message: "Erreur lors de la récupération des statuts" 
+                message: "Erreur lors de la récupération des status" 
             
             });
 
@@ -46,7 +46,7 @@ const statutController = {
                 return res.status(404).json({ 
                     
                     success: false, 
-                    message: "Statut introuvable" 
+                    message: "Status introuvable" 
                 
                 });
 
@@ -83,7 +83,7 @@ const statutController = {
                 return res.status(404).json({ 
                     
                     success: false, 
-                    message: "Statut introuvable" 
+                    message: "Status introuvable" 
                 
                 });
 
@@ -139,7 +139,7 @@ const statutController = {
 
             res.status(201).json({ 
                 
-                message: "Statut ajouté", 
+                message: "Status ajouté", 
                 id 
             
             });
@@ -167,7 +167,7 @@ const statutController = {
 
             res.json({ 
                 
-                message: "Statut modifié" 
+                message: "Status modifié" 
             
             });
 

@@ -1,8 +1,5 @@
 const CollectionModel = require("../models/collectionModel");
 
-/**
- * Contrôleur pour gérer les requêtes de collection
- */
 const collectionController = {
 
     // Récupérer toutes les collections
